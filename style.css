@@ -7,11 +7,15 @@
 :root {
   font-size: clamp(40%, 1% + 2vw, 62.5%);
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Outfit", sans-serif;
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
 }
 
 body {
-  background-color: #d5e1ef;
+  background-color: var(--Light-gray);
 }
 
 .container {
@@ -24,12 +28,12 @@ body {
 
 .card {
   display: flex;
-  
+
   border-radius: 1.2rem;
-  
+
   max-width: 27rem;
-  
-  background-color: #fff;
+
+  background-color: var(--White);
   flex-direction: column;
   align-items: center;
 
@@ -37,7 +41,6 @@ body {
 }
 
 #qrCode {
-
   padding: 1.2rem;
 
   width: 100%;
@@ -52,7 +55,7 @@ body {
 }
 
 .text h1 {
-  color: #354052;
+  color: var(--Dark-blue);
   font-weight: 700;
   font-size: 1.9rem;
 }
@@ -60,10 +63,9 @@ body {
 .text h4 {
   margin-top: 1rem;
 
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 
-
-  color: #898991;
+  color: var(--Grayish-blue);
   font-weight: 400;
 
   margin-bottom: 4rem;
