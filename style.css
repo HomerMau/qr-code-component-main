@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #d5e1ef;
+}
+
+.container {
+  display: grid;
+
+  place-content: center;
+
+  height: 90vh;
+}
+
+.card {
+  display: flex;
+  
+  border-radius: 1.2rem;
+  
+  max-width: 27rem;
+  
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+#qrCode {
+
+  padding: 1.2rem;
+
+  width: 100%;
+
+  border-radius: 2rem;
+}
+
+.text {
+  margin: 0 2rem;
+
+  text-align: center;
+}
+
+.text h1 {
+  color: #354052;
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.text h4 {
+  margin-top: 1rem;
+
+  font-size: 1.4rem;
+
+
+  color: #898991;
+  font-weight: 400;
+
+  margin-bottom: 4rem;
+}
